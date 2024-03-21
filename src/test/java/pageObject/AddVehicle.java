@@ -13,22 +13,38 @@ public class AddVehicle extends Androidactions {
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Standard Edition']/..[@resource-id='com.tvsm.connect.srilanka:id/rel']/following-sibling::android.widget.ImageView[@resource-id='com.tvsm.connect.srilanka:id/up_down_arrows']")
-	private WebElement addVehicle;
+	private WebElement addSEVehicle;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Standard Edition']/..[@resource-id='com.tvsm.connect.srilanka:id/rel']/following-sibling::android.widget.ImageView[@resource-id='com.tvsm.connect.srilanka:id/up_down_arrows']")
-	private WebElement downArrow;
+	private WebElement clkdownArrow;
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Racing Edition']/..[@resource-id='com.tvsm.connect.srilanka:id/rel']/following-sibling::android.widget.ImageView[@resource-id='com.tvsm.connect.srilanka:id/up_down_arrows']")
+	private WebElement addREVehicle;
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='Racing Edition']/..[@resource-id='com.tvsm.connect.srilanka:id/rel']/following-sibling::android.widget.ImageView[@resource-id='com.tvsm.connect.srilanka:id/up_down_arrows']")
+	private WebElement clkdownarrow;
+	
 	
 	//Actions
-	public void addvehicles() throws InterruptedException
+	public void addStandardEdition() throws InterruptedException
 	{
 		
-		addVehicle.click();
+		addSEVehicle.click();
 	    addVehicle();
-	//    downArrow.click();
+	    allowAppPermission();
+	}
+	
+	public void addRacingEdition(String Text)
+	{
+		addnewbike();
+		addREVehicle.click();
+		addVehicle();
+		ScrollToText(Text);
+		clkdownarrow.click();
+		
 		
 	}
-
-	}
+}
 	
 	
 

@@ -44,7 +44,7 @@ public class ExtentReportManager implements ITestListener  {
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "SriLanka");
+		extent.setSystemInfo("Application", "TVS Connect SriLanka");
 	//	extent.setSystemInfo("Module", "Admin");
 	//	extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));

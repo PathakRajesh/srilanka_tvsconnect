@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 14 10:44:51 IST 2024</td>
+<td>Started on:</td><td>Wed Mar 20 10:21:26 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9522 ms)</td>
+<tr><td>Total time:</td><td>188 seconds (188013 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,30 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.SriLanka.configureappium()'><b>configureappium</b><br>Test class: testCases.SriLanka</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName &apos;UIAutomator2&apos; and platformName &apos;ANDROID&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Could not find installed driver to support given caps) 
-Host info: host: &apos;DESKTOP-HQV51JQ&apos;, ip: &apos;192.168.3.195&apos;
+<td title='testCases.SriLanka.Teardown()'><b>Teardown</b><br>Test class: testCases.SriLanka</td>
+<td><div><pre>org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=Moto g32, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:/Users/rajesh/Downloads/TVSConnect-2.14.1-srilankaStage-debug.apk}], desiredCapabilities=Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}}]
-Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+Command: [5e0d8863-cb0b-4271-9b94-48ac0dbf744a, close {}]
+Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:appPackage: com.tvsm.connect.srilanka, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:/Users/rajesh/Downloads/T..., automationName: UIAutomator2, deviceName: Moto g32, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: motorola, appium:deviceModel: moto g32, appium:deviceName: ZD2227V8YD, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD2227V8YD, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 13, appium:statBarHeight: 105, appium:takesScreenshot: true, appium:viewportRect: {height: 2070, left: 0, top: 105, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e0d8863-cb0b-4271-9b94-48ac0dbf744a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at testBase.BaseClass.configureappium(BaseClass.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+	at testBase.BaseClass.Teardown(BaseClass.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,8 +106,8 @@ Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName:
 	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
@@ -125,30 +124,29 @@ Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace65586123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace65586123'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName &apos;UIAutomator2&apos; and platformName &apos;ANDROID&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Could not find installed driver to support given caps) 
-Host info: host: &apos;DESKTOP-HQV51JQ&apos;, ip: &apos;192.168.3.195&apos;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1320566216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320566216'><pre>org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=Moto g32, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:/Users/rajesh/Downloads/TVSConnect-2.14.1-srilankaStage-debug.apk}], desiredCapabilities=Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}}]
-Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+Command: [5e0d8863-cb0b-4271-9b94-48ac0dbf744a, close {}]
+Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:appPackage: com.tvsm.connect.srilanka, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:/Users/rajesh/Downloads/T..., automationName: UIAutomator2, deviceName: Moto g32, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: motorola, appium:deviceModel: moto g32, appium:deviceName: ZD2227V8YD, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD2227V8YD, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 13, appium:statBarHeight: 105, appium:takesScreenshot: true, appium:viewportRect: {height: 2070, left: 0, top: 105, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e0d8863-cb0b-4271-9b94-48ac0dbf744a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at testBase.BaseClass.configureappium(BaseClass.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+	at testBase.BaseClass.Teardown(BaseClass.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,8 +155,8 @@ Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName:
 	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
@@ -176,155 +174,68 @@ Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName:
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
-<td>testCases.SriLanka@1e04fa0a</td></tr>
+<td>0</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.SriLanka.applicationLogin()'><b>applicationLogin</b><br>Test class: testCases.SriLanka</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName &apos;UIAutomator2&apos; and platformName &apos;ANDROID&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Could not find installed driver to support given caps) 
-Host info: host: &apos;DESKTOP-HQV51JQ&apos;, ip: &apos;192.168.3.195&apos;
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=Moto g32, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:/Users/rajesh/Downloads/TVSConnect-2.14.1-srilankaStage-debug.apk}], desiredCapabilities=Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}}]
-Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at testBase.BaseClass.configureappium(BaseClass.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1637876401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1637876401'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName &apos;UIAutomator2&apos; and platformName &apos;ANDROID&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Could not find installed driver to support given caps) 
-Host info: host: &apos;DESKTOP-HQV51JQ&apos;, ip: &apos;192.168.3.195&apos;
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=Moto g32, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:/Users/rajesh/Downloads/TVSConnect-2.14.1-srilankaStage-debug.apk}], desiredCapabilities=Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}}]
-Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at testBase.BaseClass.configureappium(BaseClass.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.SriLanka@1e04fa0a</td></tr>
+<td title='testCases.SriLanka.tearDown()'><b>tearDown</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>-1710910474</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='testCases.SriLanka.addVehicle()'><b>addVehicle</b><br>Test class: testCases.SriLanka</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName &apos;UIAutomator2&apos; and platformName &apos;ANDROID&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Could not find installed driver to support given caps) 
-Host info: host: &apos;DESKTOP-HQV51JQ&apos;, ip: &apos;192.168.3.195&apos;
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.widget.Button[@resource-id=&quot;com.android.permissioncontroller:id/permission_allow_button&quot;]&apos; does not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=Moto g32, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:/Users/rajesh/Downloads/TVSConnect-2.14.1-srilankaStage-debug.apk}], desiredCapabilities=Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}}]
-Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+Command: [5e0d8863-cb0b-4271-9b94-48ac0dbf744a, clickElement {id=00000000-0000-0110-ffff-ffff00000112}]
+Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:appPackage: com.tvsm.connect.srilanka, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:/Users/rajesh/Downloads/T..., automationName: UIAutomator2, deviceName: Moto g32, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: motorola, appium:deviceModel: moto g32, appium:deviceName: ZD2227V8YD, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD2227V8YD, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 13, appium:statBarHeight: 105, appium:takesScreenshot: true, appium:viewportRect: {height: 2070, left: 0, top: 105, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (5e0d8863-cb0b-4271-9b94-48ac0dbf744a)] -&gt; xpath: //android.widget.Button[@resource-id=&quot;com.android.permissioncontroller:id/permission_allow_button&quot;]]
+Session ID: 5e0d8863-cb0b-4271-9b94-48ac0dbf744a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at testBase.BaseClass.configureappium(BaseClass.java:52)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at utilities.Androidactions.allowAppPermission(Androidactions.java:57)
+	at pageObject.AddVehicle.addStandardEdition(AddVehicle.java:34)
+	at testCases.SriLanka.addVehicle(SriLanka.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
@@ -341,40 +252,44 @@ Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1037475674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1037475674'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName &apos;UIAutomator2&apos; and platformName &apos;ANDROID&apos;. Have you installed a driver that supports those capabilities? Run &apos;appium driver list --installed&apos; to see. (Lower-level error: Could not find installed driver to support given caps) 
-Host info: host: &apos;DESKTOP-HQV51JQ&apos;, ip: &apos;192.168.3.195&apos;
+</pre></div><a href='#' onClick='toggleBox("stack-trace696031899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace696031899'><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.widget.Button[@resource-id=&quot;com.android.permissioncontroller:id/permission_allow_button&quot;]&apos; does not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=Moto g32, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:/Users/rajesh/Downloads/TVSConnect-2.14.1-srilankaStage-debug.apk}], desiredCapabilities=Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}}]
-Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName: UIAutomator2, appium:deviceName: Moto g32, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+Command: [5e0d8863-cb0b-4271-9b94-48ac0dbf744a, clickElement {id=00000000-0000-0110-ffff-ffff00000112}]
+Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:appPackage: com.tvsm.connect.srilanka, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:/Users/rajesh/Downloads/T..., automationName: UIAutomator2, deviceName: Moto g32, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: motorola, appium:deviceModel: moto g32, appium:deviceName: ZD2227V8YD, appium:deviceScreenDensity: 400, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: ZD2227V8YD, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5, appium:platformVersion: 13, appium:statBarHeight: 105, appium:takesScreenshot: true, appium:viewportRect: {height: 2070, left: 0, top: 105, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (5e0d8863-cb0b-4271-9b94-48ac0dbf744a)] -&gt; xpath: //android.widget.Button[@resource-id=&quot;com.android.permissioncontroller:id/permission_allow_button&quot;]]
+Session ID: 5e0d8863-cb0b-4271-9b94-48ac0dbf744a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at testBase.BaseClass.configureappium(BaseClass.java:52)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at utilities.Androidactions.allowAppPermission(Androidactions.java:57)
+	at pageObject.AddVehicle.addStandardEdition(AddVehicle.java:34)
+	at testCases.SriLanka.addVehicle(SriLanka.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
@@ -392,8 +307,96 @@ Capabilities {appium:app: C:/Users/rajesh/Downloads/T..., appium:automationName:
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testCases.SriLanka@1e04fa0a</td></tr>
+<td>8</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.SriLanka.howtovideos()'><b>howtovideos</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>4</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.lastparkedlocation()'><b>lastparkedlocation</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>6</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.applicationLogin()'><b>applicationLogin</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>24</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.signupDetails()'><b>signupDetails</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>7</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.reridedetails()'><b>reridedetails</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>11</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.verifyOtp()'><b>verifyOtp</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>11</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.settings()'><b>settings</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>11</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.resettings()'><b>resettings</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>11</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.howToVideos()'><b>howToVideos</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>4</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.lastParkLocation()'><b>lastParkLocation</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>7</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.addReBike()'><b>addReBike</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>10</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.remyrides()'><b>remyrides</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>4</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.myRides()'><b>myRides</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>4</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.rideDetails()'><b>rideDetails</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>18</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.knowyourbike()'><b>knowyourbike</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>9</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
+<tr>
+<td title='testCases.SriLanka.reknowyourbike()'><b>reknowyourbike</b><br>Test class: testCases.SriLanka</td>
+<td></td>
+<td>8</td>
+<td>testCases.SriLanka@bae7dc0</td></tr>
 </table><p>
 </body>
 </html>

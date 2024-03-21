@@ -9,7 +9,16 @@
       <class name="testCases.SriLanka">
 		  <methods>
 			 <include name="applicationLogin()"></include>
+			 <include name="signupDetails()"></include>
+			 <include name="verifyOtp()"></include>
 			 <include name="addVehicle()"></include>
+			 <include name="rideDetails()"></include>
+			 <include name="myRides()"></include>
+			 <include name="knowyourbike()"></include>
+			 <include name="settings()"></include>
+			 <include name="lastParkLocation()"></include>
+			 <include name=" howToVideos()"></include>
+			          
 			
 	</methods>
 		  
